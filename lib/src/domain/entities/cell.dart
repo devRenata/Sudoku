@@ -16,12 +16,12 @@ class Cell {
   bool get isCorrect => value == solution;
   bool get isEmpty => value == 0;
 
-  Cell copyWith({int? value}) {
+  Cell copyWith({required int value}) {
     return Cell(
       coordinate: coordinate,
       isEditable: isEditable,
       solution: solution,
-      value: value ?? this.value,
+      value: value,
     );
   }
 
