@@ -4,6 +4,7 @@ import 'domain/entities/cell_test.dart' as cell_test;
 import 'domain/entities/board_test.dart' as board_test;
 import 'domain/value_objects/coordinate_test.dart' as coordinate_test;
 import 'domain/value_objects/difficulty_test.dart' as difficulty_test; 
+import 'infra/services/sudoku_generator_imp_test.dart' as generator_test;
 
 void main() {
   group('Domain unit tests |', () {
@@ -11,5 +12,6 @@ void main() {
     board_test.main();
     coordinate_test.main();
     difficulty_test.main();
+    generator_test.main();
   });
 }
